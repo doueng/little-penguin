@@ -24,9 +24,7 @@ static ssize_t ft_write (struct file *filp,
 
 	memset(to, 0, LOGIN_LEN + 1);
 	write_ret = simple_write_to_buffer(to, LOGIN_LEN, ppos, user, len);
-	if (write_ret <= 0)
-		return -EINVAL;
-	return (0 == memcmp(LOGIN, user, min(LOGIN_LEN, len))
+	return (0 == memcmp(LOGIN, user, LOGIN_LEN)
 		? write_ret
 		: -EINVAL);
 }

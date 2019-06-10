@@ -9,21 +9,21 @@ MODULE_DESCRIPTION("Keyboard alarm system");
 
 int	kbd_probe(struct usb_interface *intf, const struct usb_device_id *id)
 {
-	print_d("!!!!!!!!!!!!!!!!!!!!!!\n");
-	print_d("======= DANGER =======\n");
-	print_d("====== KEYBOARD ======\n");
-	print_d("===== CONNECTED! =====\n");
-	print_d("!!!!!!!!!!!!!!!!!!!!!!\n");
+	pr_info("!!!!!!!!!!!!!!!!!!!!!!\n");
+	pr_info("======= DANGER =======\n");
+	pr_info("====== KEYBOARD ======\n");
+	pr_info("===== CONNECTED! =====\n");
+	pr_info("!!!!!!!!!!!!!!!!!!!!!!\n");
 	return 0;
 }
 
 void	kbd_disconnect(struct usb_interface *intf)
 {
-	print_d("!!!!!!!!!!!!!!!!!!!!!!!\n");
-	print_d("===== DANGER OVER =====\n");
-	print_d("====== KEYBOARD =======\n");
-	print_d("==== DISCONNECTED =====\n");
-	print_d("!!!!!!!!!!!!!!!!!!!!!!!\n");
+	pr_info("!!!!!!!!!!!!!!!!!!!!!!!\n");
+	pr_info("===== DANGER OVER =====\n");
+	pr_info("====== KEYBOARD =======\n");
+	pr_info("==== DISCONNECTED =====\n");
+	pr_info("!!!!!!!!!!!!!!!!!!!!!!!\n");
 }
 
 // include/uapi/linux/hid.h

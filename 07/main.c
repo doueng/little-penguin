@@ -2,11 +2,13 @@
 #include <linux/debugfs.h>
 #include <linux/syscalls.h>
 #include <linux/jiffies.h>
-#include <linux/syscalls.h>
+
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Douglas Engstrand");
 
 struct dentry *debugfs_dentry;
-static char buffer[PAGE_SIZE];
-static int buffer_len = 0;
+static u8 buffer[PAGE_SIZE];
+static u32 buffer_len = 0;
 
 DEFINE_MUTEX(lock);
 
@@ -18,7 +20,7 @@ static ssize_t id_read(struct file *filp,
 	mutex_lock(&lock);
 	ret = simple_read_from_buffer(user, len, ppos, buffer, buffer_len);
 	mutex_unlock(&lock);
-	return ret >= 0 ? 0 : ret;
+	return ret;
 }
 
 static ssize_t id_write(struct file *filp,
@@ -29,10 +31,8 @@ static ssize_t id_write(struct file *filp,
 	mutex_lock(&lock);
 	ret = simple_write_to_buffer(buffer, PAGE_SIZE, ppos, user, len);
 	mutex_unlock(&lock);
-	if (ret < 0)
-		return ret;
-	buffer_len = ret;
-	return 0;
+	buffer_len = ret > 0 ? ret : buffer_len;
+	return ret;
 }
 
 static struct file_operations id_ops = {
@@ -43,11 +43,16 @@ static struct file_operations id_ops = {
 static ssize_t jiffies_read(struct file *filp,
 		char __user *user, size_t len, loff_t *ppos)
 {
+	char jiffies[25];
+
+	memset(jiffies, 0, ARRAY_SIZE(jiffies));
+	if (0 > sprintf(jiffies, "%llu\n", get_jiffies_64()))
+		return -1;
 	return simple_read_from_buffer(user,
-			sizeof(uint64_t),
+			len,
 			ppos,
-			get_jiffies_64(),
-			sizeof(jiffies));
+			jiffies,
+			strlen(jiffies));
 }
 
 static struct file_operations jiffies_ops = {
@@ -73,19 +78,19 @@ static struct file_operations foo_ops = {
 
 static int ft_init(void)
 {
+	char dpath[101];
+
+	memset(dpath, 0, ARRAY_SIZE(dpath));
+
 	if (!(debugfs_dentry = debugfs_create_dir("fortytwo", NULL)))
 		return -1;
-	// change gid on lfs
-	if (-1 == ksys_chown(dentry_path(debufs_dentry), -1, 985))
+	//if (NULL == dentry_path_raw(debugfs_dentry, dpath, 100))
+	//	return -1;
+	if (!debugfs_create_file("id", 0666, debugfs_dentry, NULL, &id_ops))
 		return -1;
-	if (!debugfs_create_file("id",
-			0666, debufs_dentry, NULL, &id_ops))
+	if (!debugfs_create_file("jiffies", 0444, debugfs_dentry, NULL, &jiffies_ops))
 		return -1;
-	if (!debugfs_create_file("jiffies",
-			0444, debufs_dentry, NULL, &jiffies_ops))
-		return -1;
-	if (!debugfs_create_file("foo",
-			0644, debufs_dentry, NULL, &foo_ops))
+	if (!debugfs_create_file("foo", 0644, debugfs_dentry, NULL, &foo_ops))
 		return -1;
 	return 0;
 }

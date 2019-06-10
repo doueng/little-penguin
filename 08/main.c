@@ -2,14 +2,15 @@
 #include <linux/kernel.h>
 #include <linux/miscdevice.h>
 #include <linux/string.h>
+#include <linux/syscalls.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Douglas Engstand");
-MODULE_DESCRIPTION("Reverse string module");
+MODULE_DESCRIPTION("Reverse string");
 
 DEFINE_MUTEX(lock);
 
-char rev_str[PAGE_SIZE];
+static char rev_str[PAGE_SIZE];
 
 static ssize_t myfd_read(struct file *fp, char __user *user,
 		size_t size, loff_t *offs)
@@ -19,7 +20,7 @@ static ssize_t myfd_read(struct file *fp, char __user *user,
 	mutex_lock(&lock);
 	res = simple_read_from_buffer(user, size, offs, rev_str, strlen(rev_str));
 	mutex_unlock(&lock);
-	return res >= 0 ? 0 : res;
+	return res;
 }
 
 static ssize_t myfd_write(struct file *fp, const char __user *user,
@@ -27,17 +28,21 @@ static ssize_t myfd_write(struct file *fp, const char __user *user,
 {
 	ssize_t res;
 	int i;
+	int len;
 
 	mutex_lock(&lock);
-	memset(rev_str, PAGE_SIZE, 0);
+	memset(rev_str, 0, PAGE_SIZE);
 	res = simple_write_to_buffer(rev_str, PAGE_SIZE - 1, offs, user, size);
-	if (res > 0) {
-		i = 0;
-		while (i < res)
-			rev_str[i++] = rev_str[--res]
+	len = res;
+	pr_info("(%d)\n", len);
+	if (len > 0 && res > 0) {
+		i = -1;
+		while (++i < --len) {
+			swap(rev_str[i], rev_str[len]);
+		}
 	}
 	mutex_unlock(&lock);
-	return res >= 0 ? 0 : res;
+	return res;
 }
 
 static struct file_operations myfd_fops = {
