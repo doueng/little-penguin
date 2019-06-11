@@ -27,14 +27,13 @@ static ssize_t ft_read(struct file *filp, char __user *user, size_t len, loff_t 
 	struct mount *mnt;
 	char mount_name[100];
 	char path[100];
-	char r[1000];
+	char r[1000] = {0};
 	char *d_name;
 
-	memset(r, 0, ARRAY_SIZE(r));
 	list_for_each_entry(mnt, &current->nsproxy->mnt_ns->list, mnt_list)
 	{
 		memset(mount_name, 0, ARRAY_SIZE(mount_name));
-		memset(mount_name, 0, ARRAY_SIZE(path));
+		memset(path, 0, ARRAY_SIZE(path));
 		d_name = mnt->mnt_mountpoint->d_iname;
 		sprintf(mount_name, "%s\t%s\n", d_name, dentry_path_raw(mnt->mnt_mountpoint, path, ARRAY_SIZE(path)));
 		//sprintf(mount_name, "%s\t%s\n", d_name, mnt->mnt_devname);

@@ -19,13 +19,12 @@ static ssize_t ft_read (struct file *filp,
 static ssize_t ft_write (struct file *filp,
 		const char __user *user, size_t len, loff_t *ppos)
 {
-	char to[9];
-	ssize_t write_ret;
+	char to[9] = {0};
+	ssize_t ret;
 
-	memset(to, 0, LOGIN_LEN + 1);
-	write_ret = simple_write_to_buffer(to, LOGIN_LEN, ppos, user, len);
+	ret = simple_write_to_buffer(to, LOGIN_LEN, ppos, user, len);
 	return (0 == memcmp(LOGIN, user, LOGIN_LEN)
-		? write_ret
+		? ret
 		: -EINVAL);
 }
 

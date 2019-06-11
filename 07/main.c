@@ -20,7 +20,7 @@ static ssize_t id_read(struct file *filp,
 	mutex_lock(&lock);
 	ret = simple_read_from_buffer(user, len, ppos, buffer, buffer_len);
 	mutex_unlock(&lock);
-	return ret;
+	return ret == 0 ? -EINVAL : ret;
 }
 
 static ssize_t id_write(struct file *filp,
@@ -32,7 +32,7 @@ static ssize_t id_write(struct file *filp,
 	ret = simple_write_to_buffer(buffer, PAGE_SIZE, ppos, user, len);
 	mutex_unlock(&lock);
 	buffer_len = ret > 0 ? ret : buffer_len;
-	return ret;
+	return ret == 0 ? -EINVAL : ret;
 }
 
 static struct file_operations id_ops = {
@@ -43,15 +43,11 @@ static struct file_operations id_ops = {
 static ssize_t jiffies_read(struct file *filp,
 		char __user *user, size_t len, loff_t *ppos)
 {
-	char jiffies[25];
+	char jiffies[25] = {0};
 
-	memset(jiffies, 0, ARRAY_SIZE(jiffies));
 	if (0 > sprintf(jiffies, "%llu\n", get_jiffies_64()))
 		return -1;
-	return simple_read_from_buffer(user,
-			len,
-			ppos,
-			jiffies,
+	return simple_read_from_buffer(user, len, ppos, jiffies,
 			strlen(jiffies));
 }
 
@@ -78,9 +74,9 @@ static struct file_operations foo_ops = {
 
 static int ft_init(void)
 {
-	char dpath[101];
+	char dpath[101] = {0};
 
-	memset(dpath, 0, ARRAY_SIZE(dpath));
+	//ft_chown chown = kallsyms_lookup_name("sys_chown");
 
 	if (!(debugfs_dentry = debugfs_create_dir("fortytwo", NULL)))
 		return -1;
