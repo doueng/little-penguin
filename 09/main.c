@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note
 #include <linux/module.h>
 #include <linux/kernel.h>
 #include <linux/mount.h>
@@ -30,8 +31,7 @@ static ssize_t ft_read(struct file *filp, char __user *user, size_t len, loff_t 
 	char r[1000] = {0};
 	char *d_name;
 
-	list_for_each_entry(mnt, &current->nsproxy->mnt_ns->list, mnt_list)
-	{
+	list_for_each_entry(mnt, &current->nsproxy->mnt_ns->list, mnt_list) {
 		memset(mount_name, 0, ARRAY_SIZE(mount_name));
 		memset(path, 0, ARRAY_SIZE(path));
 		d_name = mnt->mnt_mountpoint->d_iname;
@@ -42,7 +42,7 @@ static ssize_t ft_read(struct file *filp, char __user *user, size_t len, loff_t 
 	return simple_read_from_buffer(user, len, ppos, r, strlen(r));
 }
 
-static struct file_operations ft_ops = {
+const static struct file_operations ft_ops = {
 	.owner = THIS_MODULE,
 	.read = ft_read,
 };
@@ -50,8 +50,8 @@ static struct file_operations ft_ops = {
 static int ft_init(void)
 {
 	pr_info("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-	pent = proc_create("mymounts",0660,NULL,&ft_ops);
-	return (pent ? 0 : -1);
+	pent = proc_create("mymounts", 0660, NULL, &ft_ops);
+	return pent ? 0 : -1;
 }
 
 static void ft_exit(void)

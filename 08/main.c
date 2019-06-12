@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note
 #include <linux/module.h>
 #include <linux/kernel.h>
 #include <linux/miscdevice.h>
@@ -18,7 +19,8 @@ static ssize_t myfd_read(struct file *fp, char __user *user,
 	ssize_t res;
 
 	mutex_lock(&lock);
-	res = simple_read_from_buffer(user, size, offs, rev_str, strlen(rev_str));
+	res = simple_read_from_buffer(user, size, offs,
+						rev_str, strlen(rev_str));
 	mutex_unlock(&lock);
 	return res;
 }
@@ -37,15 +39,14 @@ static ssize_t myfd_write(struct file *fp, const char __user *user,
 	pr_info("(%d)\n", len);
 	if (len > 0 && res > 0) {
 		i = -1;
-		while (++i < --len) {
+		while (++i < --len)
 			swap(rev_str[i], rev_str[len]);
-		}
 	}
 	mutex_unlock(&lock);
 	return res;
 }
 
-static struct file_operations myfd_fops = {
+const static struct file_operations myfd_fops = {
 	.owner = THIS_MODULE,
 	.read = myfd_read,
 	.write = myfd_write
