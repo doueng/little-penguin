@@ -4,12 +4,9 @@
 #include <linux/syscalls.h>
 #include <linux/jiffies.h>
 
-MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Douglas Engstrand");
-
 struct dentry *debugfs_dentry;
 static u8 buffer[PAGE_SIZE] = {0};
-static u32 buffer_len;
+static u32 buffer_len = 0;
 
 DEFINE_MUTEX(lock);
 
@@ -21,7 +18,7 @@ static ssize_t id_read(struct file *filp,
 	mutex_lock(&lock);
 	ret = simple_read_from_buffer(user, len, ppos, buffer, buffer_len);
 	mutex_unlock(&lock);
-	return ret == 0 ? -EINVAL : ret;
+	return ret;
 }
 
 static ssize_t id_write(struct file *filp,
@@ -30,10 +27,10 @@ static ssize_t id_write(struct file *filp,
 	int ret;
 
 	mutex_lock(&lock);
-	ret = simple_write_to_buffer(buffer, PAGE_SIZE, ppos, user, len);
-	mutex_unlock(&lock);
+	ret = simple_write_to_buffer(buffer, PAGE_SIZE, ppos, user, PAGE_SIZE, len);
 	buffer_len = ret > 0 ? ret : buffer_len;
-	return ret == 0 ? -EINVAL : ret;
+	mutex_unlock(&lock);
+	return ret;
 }
 
 const static struct file_operations id_ops = {
@@ -75,10 +72,11 @@ const static struct file_operations foo_ops = {
 
 static int ft_init(void)
 {
-	char dpath[101] = {0};
+	//char dpath[101] = {0};
 
 	//ft_chown chown = kallsyms_lookup_name("sys_chown");
-	debugfs_dentry = debugfs_create_dir("fortytwo", NULL)
+	debugfs_dentry = debugfs_create_dir("fortytwo", NULL);
+	pr_info("hello");
 	if (!debugfs_dentry)
 		return -1;
 	//if (NULL == dentry_path_raw(debugfs_dentry, dpath, 100))
@@ -100,3 +98,6 @@ static void ft_exit(void)
 
 module_init(ft_init);
 module_exit(ft_exit);
+
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Douglas Engstrand");
