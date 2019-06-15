@@ -27,7 +27,7 @@ static ssize_t id_write(struct file *filp,
 	int ret;
 
 	mutex_lock(&lock);
-	ret = simple_write_to_buffer(buffer, PAGE_SIZE, ppos, user, PAGE_SIZE, len);
+	ret = simple_write_to_buffer(buffer, PAGE_SIZE, ppos, user, PAGE_SIZE);
 	buffer_len = ret > 0 ? ret : buffer_len;
 	mutex_unlock(&lock);
 	return ret;
@@ -70,17 +70,22 @@ const static struct file_operations foo_ops = {
 	.write = foo_write
 };
 
+static long (*chown)(const char __user *filename, uid_t user, gid_t group);
+
 static int ft_init(void)
 {
-	//char dpath[101] = {0};
-
-	//ft_chown chown = kallsyms_lookup_name("sys_chown");
+	char dpath[101] = {0};
+	void **syscall_table;
+	syscall_table = (void*)0xffffffff820000e0;
+	chown = syscall_table[__NR_chown];
+	//chown = (void*)kallsyms_lookup_name("sys_chwon");
 	debugfs_dentry = debugfs_create_dir("fortytwo", NULL);
-	pr_info("hello");
 	if (!debugfs_dentry)
 		return -1;
-	//if (NULL == dentry_path_raw(debugfs_dentry, dpath, 100))
-	//	return -1;
+	if (NULL == dentry_path_raw(debugfs_dentry, dpath, 200))
+		return -1;
+	pr_info("%s\n", dpath);
+	//chown(dpath, -1, 1000);
 	if (!debugfs_create_file("id", 0666, debugfs_dentry, NULL, &id_ops))
 		return -1;
 	if (!debugfs_create_file("jiffies", 0444, debugfs_dentry,

@@ -1,14 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note
 #include <linux/module.h>
 #include <linux/kernel.h>
-#include <linux/mount.h>
+#include <../fs/mount.h>
 #include <linux/limits.h> // PATH_MAX
-#include <linux/path.h>
+#include <linux/slab.h> // kzalloc
 
+
+#include <linux/path.h>
 
 #include <linux/sched.h>
 #include <linux/nsproxy.h>
-//#include <../fs/mount.h>
 #include <linux/mount.h>
 #include <linux/string.h>
 
@@ -20,7 +21,6 @@
 #include <asm/uaccess.h>
 
 #define read_string(s) (simple_read_from_buffer(user, len, ppos, s, strlen(s)))
-#define x(ret) if (ret < 0) { return ret; } else { ret; }
 
 static struct proc_dir_entry *pent;
 
@@ -28,21 +28,26 @@ static ssize_t ft_read(struct file *filp, char __user *user, size_t len, loff_t 
 {
 	// struct task_struct == typeof(current)
 	struct mount *mnt;
-	struct path;
-	//char mount_name[PATH_MAX+1];
+	struct path path;
+	char *mount_name;
 	//char r[1000] = {0};
 	//char *d_name;
 	ssize_t num_read;
+	char *tmp;
 
+	mount_name = kzalloc(PATH_MAX+1, GFP_KERNEL);
+	num_read = -1;
 	list_for_each_entry(mnt, &current->nsproxy->mnt_ns->list, mnt_list) {
 		//memset(mount_name, 0, ARRAY_SIZE(mount_name));
 		//d_name = mnt->mnt_mountpoint->d_iname;
-		num_read += x(read_string(mnt->mnt_mountpoint->d_iname));
-		path = {.mnt = &mnt->mnt,
-			.dentry = mnt->mnt_mountpoint}
-		num_read += x(read_string("\t"));
-		num_read += x(read_string(path_get(&path)));
-		num_read += x(read_string("\n"));
+		num_read += read_string(mnt->mnt_mountpoint->d_iname);
+		path.mnt = &mnt->mnt;
+		path.dentry = mnt->mnt_mountpoint;
+		num_read += read_string("\t");
+		tmp = dentry_path_raw(mnt->mnt_mountpoint, mount_name, PATH_MAX);
+		pr_info("%s\n", tmp);
+		num_read += read_string(tmp);
+		num_read += read_string("\n");
 		//num_read += read_string(mnt->mnt_mountpoint->d_iname);
 		//snprintf(mount_name, PATH_MAX, "%s\t%s\n", d_name, path_get(&path));
 		//sprintf(mount_name, "%s\t%s\n", d_name, mnt->mnt_devname);

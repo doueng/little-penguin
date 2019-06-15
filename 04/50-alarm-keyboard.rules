@@ -1,7 +1,6 @@
-SUBSYSTEM!="input", GOTO="kbd_end"
-SUBSYSTEMS!="usb", GOTO="kbd_end"
+SUBSYSTEM!="usb", GOTO="kbd_end"
 
-ACTION=="add", RUN+="/usr/bin/insmod /home/doueng/little-penguin/a04/main.ko"
-ACTION=="remove", RUN+="/usr/bin/rmmod /home/doueng/little-penguin/a04/main.ko"
+ATTRS{product}=="USB Tablet", ACTION=="add" RUN+="/sbin/insmod /home/dengstra/little-penguin/04/main.ko"
+ATTRS{product}=="USB Tablet", ACTION=="remove" RUN+="/sbin/insmod /home/dengstra/little-penguin/04/main.ko"
 
 LABEL="kbd_end"
