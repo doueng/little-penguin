@@ -70,22 +70,45 @@ const static struct file_operations foo_ops = {
 	.write = foo_write
 };
 
-static long (*chown)(const char __user *filename, uid_t user, gid_t group);
+#define my_syscall3(num, arg1, arg2, arg3)                                    \
+({                                                                            \
+	long _ret;                                                            \
+	register long _num  asm("rax") = (num);                               \
+	register long _arg1 asm("rdi") = (long)(arg1);                        \
+	register long _arg2 asm("rsi") = (long)(arg2);                        \
+	register long _arg3 asm("rdx") = (long)(arg3);                        \
+									      \
+	asm volatile (                                                        \
+		"syscall\n"                                                   \
+		: "=a" (_ret)                                                 \
+		: "r"(_arg1), "r"(_arg2), "r"(_arg3),                         \
+		  "0"(_num)                                                   \
+		: "rcx", "r8", "r9", "r10", "r11", "memory", "cc"             \
+	);                                                                    \
+	_ret;                                                                 \
+})
+
+
+//static long (*chown)(const char __user *filename, uid_t user, gid_t group);
 
 static int ft_init(void)
 {
-	char dpath[101] = {0};
-	void **syscall_table;
-	syscall_table = (void*)0xffffffff820000e0;
-	chown = syscall_table[__NR_chown];
+	//char dpath[101] = {0};
+	char *path;
+	//void **syscall_table;
+	//syscall_table = (void*)0xffffffff820000e0;
+	//chown = syscall_table[__NR_chown];
 	//chown = (void*)kallsyms_lookup_name("sys_chwon");
 	debugfs_dentry = debugfs_create_dir("fortytwo", NULL);
 	if (!debugfs_dentry)
 		return -1;
-	if (NULL == dentry_path_raw(debugfs_dentry, dpath, 200))
-		return -1;
-	pr_info("%s\n", dpath);
+	//path = dentry_path_raw(debugfs_dentry, dpath, 100);
+	//if (NULL == path)
+	//	return -1;
+	pr_info("%s\n", path);
+	path = "/sys/kernel/debug/fortytwo";
 	//chown(dpath, -1, 1000);
+	//my_syscall3(92, path, -1, 1000);
 	if (!debugfs_create_file("id", 0666, debugfs_dentry, NULL, &id_ops))
 		return -1;
 	if (!debugfs_create_file("jiffies", 0444, debugfs_dentry,

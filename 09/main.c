@@ -20,40 +20,26 @@
 #include <linux/proc_fs.h>
 #include <asm/uaccess.h>
 
-#define read_string(s) (simple_read_from_buffer(user, len, ppos, s, strlen(s)))
-
 static struct proc_dir_entry *pent;
+
+// vi proc_namespace.c +318
 
 static ssize_t ft_read(struct file *filp, char __user *user, size_t len, loff_t *ppos)
 {
-	// struct task_struct == typeof(current)
 	struct mount *mnt;
 	struct path path;
-	char *mount_name;
-	//char r[1000] = {0};
-	//char *d_name;
-	ssize_t num_read;
+	char *path_name;
 	char *tmp;
 
-	mount_name = kzalloc(PATH_MAX+1, GFP_KERNEL);
-	num_read = -1;
+	path_name = kzalloc(100, GFP_KERNEL);
 	list_for_each_entry(mnt, &current->nsproxy->mnt_ns->list, mnt_list) {
-		//memset(mount_name, 0, ARRAY_SIZE(mount_name));
-		//d_name = mnt->mnt_mountpoint->d_iname;
-		num_read += read_string(mnt->mnt_mountpoint->d_iname);
 		path.mnt = &mnt->mnt;
 		path.dentry = mnt->mnt_mountpoint;
-		num_read += read_string("\t");
-		tmp = dentry_path_raw(mnt->mnt_mountpoint, mount_name, PATH_MAX);
+		tmp = d_path(&path, path_name, 100);
 		pr_info("%s\n", tmp);
-		num_read += read_string(tmp);
-		num_read += read_string("\n");
-		//num_read += read_string(mnt->mnt_mountpoint->d_iname);
-		//snprintf(mount_name, PATH_MAX, "%s\t%s\n", d_name, path_get(&path));
-		//sprintf(mount_name, "%s\t%s\n", d_name, mnt->mnt_devname);
-		//strcat(r, mount_name);
+		//pr_info("%s\n", tmp);
 	}
-	return num_read;
+	return 0;
 }
 
 const static struct file_operations ft_ops = {
