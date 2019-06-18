@@ -42,15 +42,53 @@ static ssize_t ft_read(struct file *filp, char __user *user, size_t len, loff_t 
 	return 0;
 }
 
+struct list_head *head;
+
+static void *mnt_start(struct seq_file *m, loff_t *pos) {
+	head = current->nsproxy->mnt_ns->list;
+	return head;
+}
+
+static int show_mnt(struct seq_file *m, void *v) {
+	struct mount *mnt = v;
+	struct path mnt_path = { .dentry = mnt->mnt_root, .mnt = mnt };
+
+	seq_dentry(m, mnt->mnt_root, " \t\n\\");
+	//seq_path_root(m, &mnt_path, &p->root, " \t\n\\");
+	return 0;
+}
+
+static void *next_mnt(struct seq_file *m, void *v, loff_t *pos) {
+	struct mount *mnt = v;
+	return mnt->next == head ? NULL : mnt->next;
+}
+
+static void stop_mnt(struct seq_file *m, void *v) {
+}
+
+static struct seq_operations ct_seq_ops = {
+     .start = ft_start,
+     .next  = ft_next,
+     .stop  = ft_stop,
+     .show  = ft_show
+};
+
+static int ft_open(struct inode *inode, struct file *file) {
+     return seq_open(file, &ct_seq_ops);
+};
+
 const static struct file_operations ft_ops = {
 	.owner = THIS_MODULE,
-	.read = ft_read,
+	.open = ft_open,
+	.read = seq_read,
+	.llseek = seq_lseek,
+	.release = seq_release
 };
 
 static int ft_init(void)
 {
-	pent = proc_create("mymounts", 0660, NULL, &ft_ops);
-	return pent ? 0 : -1;
+	proc_create("mymounts", 0660, NULL, &ft_ops);
+	return 0;
 }
 
 static void ft_exit(void)
