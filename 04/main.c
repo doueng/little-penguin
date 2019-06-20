@@ -32,7 +32,7 @@ static struct usb_driver usb_kbd_driver = {
 	.id_table = usb_kbd_id_table,
 };
 
-module_usb_driver(kbd_driver);
+module_usb_driver(usb_kbd_driver);
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Douglas Engstrand");
