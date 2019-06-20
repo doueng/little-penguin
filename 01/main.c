@@ -1,11 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note
-
 #include <linux/module.h>
 #include <linux/kernel.h>
-
-MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Douglas Engstrand");
-MODULE_DESCRIPTION("Hello world");
 
 int ft_init(void)
 {
@@ -20,3 +15,6 @@ void ft_exit(void)
 
 module_init(ft_init);
 module_exit(ft_exit);
+
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Douglas Engstrand");

@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note
 #include <linux/module.h>
 #include <linux/kernel.h>
-#include <linux/nsproxy.h>
 #include <linux/fs_struct.h>
 #include <linux/seq_file.h>
 #include <linux/proc_fs.h>

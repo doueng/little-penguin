@@ -5,10 +5,6 @@
 #include <linux/string.h>
 #include <linux/syscalls.h>
 
-MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Douglas Engstand");
-MODULE_DESCRIPTION("Reverse string");
-
 DEFINE_MUTEX(lock);
 
 static char rev_str[PAGE_SIZE];
@@ -36,12 +32,9 @@ static ssize_t myfd_write(struct file *fp, const char __user *user,
 	memset(rev_str, 0, PAGE_SIZE);
 	res = simple_write_to_buffer(rev_str, PAGE_SIZE - 1, offs, user, size);
 	len = res;
-	pr_info("(%d)\n", len);
-	if (len > 0 && res > 0) {
-		i = -1;
-		while (++i < --len)
-			swap(rev_str[i], rev_str[len]);
-	}
+	i = -1;
+	while (len > 0 && ++i < --len)
+		swap(rev_str[i], rev_str[len]);
 	mutex_unlock(&lock);
 	return res;
 }
@@ -59,3 +52,6 @@ static struct miscdevice myfd_device = {
 };
 
 module_misc_device(myfd_device);
+
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Douglas Engstand");
