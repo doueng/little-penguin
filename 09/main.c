@@ -1,93 +1,102 @@
 // SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note
 #include <linux/module.h>
 #include <linux/kernel.h>
-#include <../fs/mount.h>
-#include <linux/limits.h> // PATH_MAX
-#include <linux/slab.h> // kzalloc
-
-
-#include <linux/path.h>
-
-#include <linux/sched.h>
 #include <linux/nsproxy.h>
-#include <linux/mount.h>
-#include <linux/string.h>
-
-#include <linux/dcache.h>
-
-#include <linux/moduleparam.h>
-#include <linux/init.h>
+#include <linux/fs_struct.h>
+#include <linux/seq_file.h>
 #include <linux/proc_fs.h>
-#include <asm/uaccess.h>
+#include <../fs/mount.h>
+#include <linux/kallsyms.h>
 
 static struct proc_dir_entry *pent;
 
-// vi proc_namespace.c +318
-
-static ssize_t ft_read(struct file *filp, char __user *user, size_t len, loff_t *ppos)
+static void print_mnt_rec(struct seq_file *s, struct mount *mnt)
 {
-	struct mount *mnt;
-	struct path path;
-	char *path_name;
-	char *tmp;
+	if (mnt_has_parent(mnt->mnt_parent))
+		print_mnt_rec(s, mnt->mnt_parent);
+	seq_dentry(s, mnt->mnt_mountpoint, " \t\n\\");
+}
 
-	path_name = kzalloc(100, GFP_KERNEL);
-	list_for_each_entry(mnt, &current->nsproxy->mnt_ns->list, mnt_list) {
-		path.mnt = &mnt->mnt;
-		path.dentry = mnt->mnt_mountpoint;
-		tmp = d_path(&path, path_name, 100);
-		pr_info("%s\n", tmp);
-		//pr_info("%s\n", tmp);
-	}
+static int ft_show(struct seq_file *s, void *v)
+{
+	struct mount *mnt = v;
+
+	pr_info("show");
+	if (!mnt)
+		return -1;
+	seq_printf(s, "%-20s", mnt->mnt_devname);
+	print_mnt_rec(s, mnt);
+	seq_puts(s, "\n");
 	return 0;
 }
 
-struct list_head *head;
-
-static void *mnt_start(struct seq_file *m, loff_t *pos) {
-	head = current->nsproxy->mnt_ns->list;
-	return head;
-}
-
-static int show_mnt(struct seq_file *m, void *v) {
+static void *ft_next(struct seq_file *s, void *v, loff_t *pos)
+{
 	struct mount *mnt = v;
-	struct path mnt_path = { .dentry = mnt->mnt_root, .mnt = mnt };
+	struct mount *next;
 
-	seq_dentry(m, mnt->mnt_root, " \t\n\\");
-	//seq_path_root(m, &mnt_path, &p->root, " \t\n\\");
-	return 0;
+	pr_info("next");
+	if (!mnt)
+		return NULL;
+	next = list_next_entry(mnt, mnt_list);
+	if (next == real_mount(s->private))
+		goto end;
+	return next;
+end:
+	*pos = 1337;
+	return NULL;
 }
 
-static void *next_mnt(struct seq_file *m, void *v, loff_t *pos) {
-	struct mount *mnt = v;
-	return mnt->next == head ? NULL : mnt->next;
+static void *ft_start(struct seq_file *s, loff_t *pos)
+{
+	struct path root;
+	struct vfsmount *(*collect_mounts)(const struct path *p);
+	void (*drop_collected_mounts)(struct vfsmount *m);
+
+	pr_info("start");
+	if (*pos == 1337)
+		goto end;
+	collect_mounts = (void *)kallsyms_lookup_name("collect_mounts");
+	get_fs_root(current->fs, &root);
+	s->private = collect_mounts(&root);
+	if (!s->private)
+		return NULL;
+	return real_mount(s->private);
+end:
+	drop_collected_mounts = (void *)kallsyms_lookup_name("drop_collected_mounts");
+	drop_collected_mounts(s->private);
+	return NULL;
+
 }
 
-static void stop_mnt(struct seq_file *m, void *v) {
+static void ft_stop(struct seq_file *s, void *v)
+{
+	pr_info("stop");
 }
 
-static struct seq_operations ct_seq_ops = {
-     .start = ft_start,
-     .next  = ft_next,
-     .stop  = ft_stop,
-     .show  = ft_show
+const struct seq_operations seq_ops = {
+	.start = ft_start,
+	.next = ft_next,
+	.show = ft_show,
+	.stop = ft_stop
 };
 
-static int ft_open(struct inode *inode, struct file *file) {
-     return seq_open(file, &ct_seq_ops);
-};
+static int ft_open(struct inode *inode, struct file *file)
+{
+	return seq_open(file, &seq_ops);
+}
 
-const static struct file_operations ft_ops = {
-	.owner = THIS_MODULE,
-	.open = ft_open,
-	.read = seq_read,
-	.llseek = seq_lseek,
-	.release = seq_release
+const struct file_operations ft_ops = {
+	.owner		= THIS_MODULE,
+	.open		= ft_open,
+	.read		= seq_read
 };
 
 static int ft_init(void)
 {
-	proc_create("mymounts", 0660, NULL, &ft_ops);
+	pent = proc_create("mymounts", 0660, NULL, &ft_ops);
+	if (!pent)
+		return -1;
 	return 0;
 }
 
@@ -101,4 +110,3 @@ module_exit(ft_exit);
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Douglas Engstrand");
-MODULE_DESCRIPTION("List mount points");
