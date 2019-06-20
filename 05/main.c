@@ -33,7 +33,7 @@ const static struct file_operations id_ops = {
 static struct miscdevice miscdev = {
 	.name = "fortytwo",
 	.minor = MISC_DYNAMIC_MINOR,
-	.fops = &fops
+	.fops = &id_ops
 };
 
 module_misc_device(miscdev);

@@ -5,11 +5,18 @@
 #include <linux/delay.h>
 #include <linux/slab.h>
 
+int delay(int delays)
+{
+	size_t udelays;
+
+	udelays = 10 * delays;
+	udelay(udelays);
+	return udelays;
+}
+
 int my_init(void)
 {
-	udelay(100);
-	pr_info("We slept a long time!");
-	return 10;
+	return delay(10);
 }
 
 void my_exit(void)
