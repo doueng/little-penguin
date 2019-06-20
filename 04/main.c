@@ -13,7 +13,7 @@ static int usb_kbd_probe(struct usb_interface *iface,
 			 const struct usb_device_id *id)
 {
 	pr_info("KEYBOARD DETECTED");
-	return (0);
+	return 0;
 }
 
 static const struct usb_device_id usb_kbd_id_table[] = {
@@ -23,7 +23,7 @@ static const struct usb_device_id usb_kbd_id_table[] = {
 	{ }
 };
 
-MODULE_DEVICE_TABLE (usb, usb_kbd_id_table);
+MODULE_DEVICE_TABLE(usb, usb_kbd_id_table);
 
 static struct usb_driver usb_kbd_driver = {
 	.name = "keyboard alarm",

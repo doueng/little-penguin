@@ -22,7 +22,7 @@ static ssize_t id_write(struct file *filp,
 	if (len != LOGIN_LEN)
 		return -EINVAL;
 	ret = simple_write_to_buffer(to, LOGIN_LEN, ppos, user, len);
-	return (memcmp(LOGIN, user, LOGIN_LEN) ? -EINVAL : ret);
+	return memcmp(LOGIN, user, LOGIN_LEN) ? -EINVAL : ret;
 }
 
 const static struct file_operations id_ops = {
