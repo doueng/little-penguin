@@ -1,0 +1,40 @@
+Script started on 2019-06-21 10:09:02+02:00 [<not executed on terminal>]
+insmod main.ko
+DDIR=/sys/kernel/debug/fortytwo
+ID=$DDIR/id
+JIFF=$DDIR/jiffies
+FOO=$DDIR/foo
+cat $ID
+echo rofl > $ID
+echo -n dengstra > $ID
+cat $JIFF
+cat $JIFF
+echo hello > $FOO
+cat $FOO
+python -c "print('a'*0x4000)" > $FOO
+rmmod main.ko
+exit
+[?25l[1m[7m#[27m[1m[0m                                                                                [0m[27m[24m[J[1m[0m[1m[31mroot[0m[31m[39m[1m [0m[1min [0m[1m[33mlittle-penguin/07[0m[33m[39m[1m [0m[K[4 q[?25l[?2004hiinsmod main.ko[4 q[?25l[?2004l
+[1m[7m#[27m[1m[0m                                                                                [0m[27m[24m[J[1m[0m[1m[31mroot[0m[31m[39m[1m [0m[1min [0m[1m[33mlittle-penguin/07[0m[33m[39m[1m [0m[K[4 q[?25l[?2004hDDDIR=/sys/kernel/debug/fortytwo[4 q[?25l[?2004l
+[1m[7m#[27m[1m[0m                                                                                [0m[27m[24m[J[1m[0m[1m[31mroot[0m[31m[39m[1m [0m[1min [0m[1m[33mlittle-penguin/07[0m[33m[39m[1m [0m[K[4 q[?25l[?2004hIID=$DDIR/id[4 q[?25l[?2004l
+[1m[7m#[27m[1m[0m                                                                                [0m[27m[24m[J[1m[0m[1m[31mroot[0m[31m[39m[1m [0m[1min [0m[1m[33mlittle-penguin/07[0m[33m[39m[1m [0m[K[4 q[?25l[?2004hJJIFF=$DDIR/jiffies[4 q[?25l[?2004l
+[1m[7m#[27m[1m[0m                                                                                [0m[27m[24m[J[1m[0m[1m[31mroot[0m[31m[39m[1m [0m[1min [0m[1m[33mlittle-penguin/07[0m[33m[39m[1m [0m[K[4 q[?25l[?2004hFFOO=$DDIR/foo[4 q[?25l[?2004l
+[1m[7m#[27m[1m[0m                                                                                [0m[27m[24m[J[1m[0m[1m[31mroot[0m[31m[39m[1m [0m[1min [0m[1m[33mlittle-penguin/07[0m[33m[39m[1m [0m[K[4 q[?25l[?2004hccat $ID[4 q[?25l[?2004l
+dengstra[1m[7m#[27m[1m[0m                                                                                [0m[27m[24m[J[1m[0m[1m[31mroot[0m[31m[39m[1m [0m[1min [0m[1m[33mlittle-penguin/07[0m[33m[39m[1m [0m[K[4 q[?25l[?2004heecho rofl > $ID[4 q[?25l[?2004l
+echo: write error: invalid argument
+[1m[7m#[27m[1m[0m                                                                                [0m[27m[24m[J[1m[0m[1m[31mroot[0m[31m[39m[1m [0m[1min [0m[1m[33mlittle-penguin/07[0m[33m[39m[1m [0m[K[4 q[?25l[?2004heecho -n dengstra > $ID[4 q[?25l[?2004l
+[1m[7m#[27m[1m[0m                                                                                [0m[27m[24m[J[1m[0m[1m[31mroot[0m[31m[39m[1m [0m[1min [0m[1m[33mlittle-penguin/07[0m[33m[39m[1m [0m[K[4 q[?25l[?2004hccat $JIFF[4 q[?25l[?2004l
+4295253425
+[1m[7m#[27m[1m[0m                                                                                [0m[27m[24m[J[1m[0m[1m[31mroot[0m[31m[39m[1m [0m[1min [0m[1m[33mlittle-penguin/07[0m[33m[39m[1m [0m[K[4 q[?25l[?2004hccat $JIFF[4 q[?25l[?2004l
+4295253438
+[1m[7m#[27m[1m[0m                                                                                [0m[27m[24m[J[1m[0m[1m[31mroot[0m[31m[39m[1m [0m[1min [0m[1m[33mlittle-penguin/07[0m[33m[39m[1m [0m[K[4 q[?25l[?2004heecho hello > $FOO[4 q[?25l[?2004l
+[1m[7m#[27m[1m[0m                                                                                [0m[27m[24m[J[1m[0m[1m[31mroot[0m[31m[39m[1m [0m[1min [0m[1m[33mlittle-penguin/07[0m[33m[39m[1m [0m[K[4 q[?25l[?2004hccat $FOO[4 q[?25l[?2004l
+hello
+[1m[7m#[27m[1m[0m                                                                                [0m[27m[24m[J[1m[0m[1m[31mroot[0m[31m[39m[1m [0m[1min [0m[1m[33mlittle-penguin/07[0m[33m[39m[1m [0m[K[4 q[?25l[?2004hppython -c "print('a'*0x4000)" > $FOO[4 q[?25l[?2004l
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+OSError: [Errno 22] Invalid argument
+[1m[7m#[27m[1m[0m                                                                                [0m[27m[24m[J[1m[0m[1m[31mroot[0m[31m[39m[1m [0m[1min [0m[1m[33mlittle-penguin/07[0m[33m[39m[1m [0m[K[4 q[?25l[?2004hrrmmod main.ko[4 q[?25l[?2004l
+[1m[7m#[27m[1m[0m                                                                                [0m[27m[24m[J[1m[0m[1m[31mroot[0m[31m[39m[1m [0m[1min [0m[1m[33mlittle-penguin/07[0m[33m[39m[1m [0m[K[4 q[?25l[?2004heexit[32me[32mx[32mi[32mt[39m[4 q[?25l[?2004l
+
+Script done on 2019-06-21 10:09:03+02:00 [COMMAND_EXIT_CODE="0"]
