@@ -5,5 +5,6 @@ M=$(shell pwd)
 
 all:
 	make -C $(BUILD) M=$(M) modules
+	make -C $(BUILD) M=$(M) modules_install
 clean:
 	make -C $(BUILD) M=$(M) clean
