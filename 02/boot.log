@@ -495,3 +495,923 @@ May 29 18:37:59 +02:00 dengstra  Bringing up the lo interface...
 May 29 18:37:59 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
 May 29 18:37:59 +02:00 dengstra  Starting SSH Server... OK
 --------
+May 29 20:03:38 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+May 29 20:03:38 +02:00 (none)  Bringing up the loopback interface...FAIL
+May 29 20:03:38 +02:00 (none)  Setting hostname to dengstra... OK
+May 29 20:03:38 +02:00 dengstra  Populating /dev with device nodes...  OK
+May 29 20:03:40 +02:00 dengstra  Activating all swap files/partitions... OK
+May 29 20:03:40 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+May 29 20:03:40 +02:00 dengstra  Checking file systems... OK
+May 29 20:03:41 +02:00 dengstra  Remounting root file system in read-write mode... OK
+May 29 20:03:41 +02:00 dengstra  Mounting remaining file systems... OK
+May 29 20:03:41 +02:00 dengstra  Cleaning file systems: /tmp OK
+May 29 20:03:41 +02:00 dengstra  Retrying failed uevents, if any... OK
+May 29 20:03:42 +02:00 dengstra  Starting system log daemon... OK
+May 29 20:03:42 +02:00 dengstra  Starting kernel log daemon... OK
+May 29 20:03:42 +02:00 dengstra  Bringing up the enp0s3 interface... 
+May 29 20:03:42 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+May 29 20:03:42 +02:00 dengstra  Setting up default gateway... OK
+May 29 20:03:42 +02:00 dengstra  Bringing up the lo interface... 
+May 29 20:03:42 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+May 29 20:03:42 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 09 14:48:54 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 09 14:48:54 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 09 14:48:54 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 09 14:48:54 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 09 14:48:56 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 09 14:48:56 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 09 14:48:56 +02:00 dengstra  Checking file systems... OK
+Jun 09 14:49:01 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 09 14:49:01 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 09 14:49:02 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 09 14:49:02 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 09 14:49:03 +02:00 dengstra  Starting system log daemon... OK
+Jun 09 14:49:03 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 09 14:49:03 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 09 14:49:03 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 09 14:49:03 +02:00 dengstra  Setting up default gateway... OK
+Jun 09 14:49:03 +02:00 dengstra  Bringing up the lo interface... 
+Jun 09 14:49:03 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 09 14:49:03 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 09 17:03:21 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 09 17:03:21 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 09 17:03:22 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 09 17:03:22 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 09 17:03:24 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 09 17:03:24 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 09 17:03:24 +02:00 dengstra  Checking file systems... OK
+Jun 09 17:03:50 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 09 17:03:50 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 09 17:03:51 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 09 17:03:51 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 09 17:03:52 +02:00 dengstra  Starting system log daemon... OK
+Jun 09 17:03:52 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 09 17:03:52 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 09 17:03:52 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 09 17:03:52 +02:00 dengstra  Setting up default gateway... OK
+Jun 09 17:03:52 +02:00 dengstra  Bringing up the lo interface... 
+Jun 09 17:03:52 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 09 17:03:52 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 09 17:06:52 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 09 17:06:52 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 09 17:06:52 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 09 17:06:52 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 09 17:06:54 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 09 17:06:54 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 09 17:06:54 +02:00 dengstra  Checking file systems... OK
+Jun 09 17:06:54 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 09 17:06:54 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 09 17:06:55 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 09 17:06:55 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 09 17:06:56 +02:00 dengstra  Starting system log daemon... OK
+Jun 09 17:06:56 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 09 17:06:56 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 09 17:06:56 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 09 17:06:56 +02:00 dengstra  Setting up default gateway... OK
+Jun 09 17:06:56 +02:00 dengstra  Bringing up the lo interface... 
+Jun 09 17:06:56 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 09 17:06:56 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 09 17:29:36 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 09 17:29:36 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 09 17:29:36 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 09 17:29:36 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 09 17:29:38 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 09 17:29:38 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 09 17:29:38 +02:00 dengstra  Checking file systems... OK
+Jun 09 17:29:39 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 09 17:29:39 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 09 17:29:40 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 09 17:29:40 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 09 17:29:41 +02:00 dengstra  Starting system log daemon... OK
+Jun 09 17:29:41 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 09 17:29:41 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 09 17:29:41 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 09 17:29:41 +02:00 dengstra  Setting up default gateway... OK
+Jun 09 17:29:41 +02:00 dengstra  Bringing up the lo interface... 
+Jun 09 17:29:41 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 09 17:29:41 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 09 18:36:07 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 09 18:36:07 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 09 18:36:07 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 09 18:36:07 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 09 18:36:10 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 09 18:36:10 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 09 18:36:10 +02:00 dengstra  Checking file systems... OK
+Jun 09 18:36:11 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 09 18:36:11 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 09 18:36:11 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 09 18:36:11 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 09 18:36:12 +02:00 dengstra  Starting system log daemon... OK
+Jun 09 18:36:12 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 09 18:36:12 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 09 18:36:12 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 09 18:36:12 +02:00 dengstra  Setting up default gateway... OK
+Jun 09 18:36:12 +02:00 dengstra  Bringing up the lo interface... 
+Jun 09 18:36:12 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 09 18:36:12 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 09 19:02:40 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 09 19:02:40 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 09 19:02:41 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 09 19:02:41 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 09 19:02:43 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 09 19:02:43 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 09 19:02:43 +02:00 dengstra  Checking file systems... OK
+Jun 09 19:02:43 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 09 19:02:43 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 09 19:02:44 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 09 19:02:44 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 09 19:02:45 +02:00 dengstra  Starting system log daemon... OK
+Jun 09 19:02:45 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 09 19:02:45 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 09 19:02:45 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 09 19:02:45 +02:00 dengstra  Setting up default gateway... OK
+Jun 09 19:02:45 +02:00 dengstra  Bringing up the lo interface... 
+Jun 09 19:02:45 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 09 19:02:45 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 09 19:10:26 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 09 19:10:27 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 09 19:10:27 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 09 19:10:27 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 09 19:10:29 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 09 19:10:29 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 09 19:10:29 +02:00 dengstra  Checking file systems... OK
+Jun 09 19:10:29 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 09 19:10:29 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 09 19:10:30 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 09 19:10:30 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 09 19:10:31 +02:00 dengstra  Starting system log daemon... OK
+Jun 09 19:10:31 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 09 19:10:31 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 09 19:10:31 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 09 19:10:31 +02:00 dengstra  Setting up default gateway... OK
+Jun 09 19:10:31 +02:00 dengstra  Bringing up the lo interface... 
+Jun 09 19:10:31 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 09 19:10:31 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 09 19:23:10 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 09 19:23:10 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 09 19:23:10 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 09 19:23:10 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 09 19:23:12 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 09 19:23:12 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 09 19:23:12 +02:00 dengstra  Checking file systems... OK
+Jun 09 19:23:13 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 09 19:23:13 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 09 19:23:14 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 09 19:23:14 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 09 19:23:15 +02:00 dengstra  Starting system log daemon... OK
+Jun 09 19:23:15 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 09 19:23:15 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 09 19:23:15 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 09 19:23:15 +02:00 dengstra  Setting up default gateway... OK
+Jun 09 19:23:15 +02:00 dengstra  Bringing up the lo interface... 
+Jun 09 19:23:15 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 09 19:23:16 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 10 15:10:36 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 10 15:10:37 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 10 15:10:37 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 10 15:10:37 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 10 15:10:40 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 10 15:10:40 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 10 15:10:40 +02:00 dengstra  Checking file systems... OK
+Jun 10 15:10:45 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 10 15:10:45 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 10 15:10:46 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 10 15:10:46 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 10 15:10:47 +02:00 dengstra  Starting system log daemon... OK
+Jun 10 15:10:47 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 10 15:10:47 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 10 15:10:47 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 10 15:10:47 +02:00 dengstra  Setting up default gateway... OK
+Jun 10 15:10:47 +02:00 dengstra  Bringing up the lo interface... 
+Jun 10 15:10:47 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 10 15:10:47 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 10 20:08:12 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 10 20:08:12 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 10 20:08:12 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 10 20:08:12 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 10 20:08:15 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 10 20:08:15 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 10 20:08:15 +02:00 dengstra  Checking file systems... OK
+Jun 10 20:08:18 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 10 20:08:18 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 10 20:08:18 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 10 20:08:18 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 10 20:08:19 +02:00 dengstra  Starting system log daemon... OK
+Jun 10 20:08:19 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 10 20:08:19 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 10 20:08:19 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 10 20:08:19 +02:00 dengstra  Setting up default gateway... OK
+Jun 10 20:08:19 +02:00 dengstra  Bringing up the lo interface... 
+Jun 10 20:08:19 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 10 20:08:19 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 15 12:50:32 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 15 12:50:32 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 15 12:50:32 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 15 12:50:32 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 15 12:50:35 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 15 12:50:35 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 15 12:50:35 +02:00 dengstra  Checking file systems... OK
+Jun 15 12:50:46 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 15 12:50:46 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 15 12:50:47 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 15 12:50:47 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 15 12:50:48 +02:00 dengstra  Starting system log daemon... OK
+Jun 15 12:50:48 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 15 12:50:48 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 15 12:50:48 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 15 12:50:48 +02:00 dengstra  Setting up default gateway... OK
+Jun 15 12:50:48 +02:00 dengstra  Bringing up the lo interface... 
+Jun 15 12:50:48 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 15 12:50:48 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 15 14:46:14 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 15 14:46:14 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 15 14:46:14 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 15 14:46:14 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 15 14:46:17 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 15 14:46:17 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 15 14:46:17 +02:00 dengstra  Checking file systems... OK
+Jun 15 14:46:19 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 15 14:46:19 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 15 14:46:19 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 15 14:46:19 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 15 14:46:20 +02:00 dengstra  Starting system log daemon... OK
+Jun 15 14:46:20 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 15 14:46:20 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 15 14:46:20 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 15 14:46:20 +02:00 dengstra  Setting up default gateway... OK
+Jun 15 14:46:20 +02:00 dengstra  Bringing up the lo interface... 
+Jun 15 14:46:20 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 15 14:46:20 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 15 14:51:07 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 15 14:51:07 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 15 14:51:07 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 15 14:51:07 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 15 14:51:10 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 15 14:51:10 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 15 14:51:10 +02:00 dengstra  Checking file systems... OK
+Jun 15 14:51:10 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 15 14:51:10 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 15 14:51:10 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 15 14:51:10 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 15 14:51:11 +02:00 dengstra  Starting system log daemon... OK
+Jun 15 14:51:11 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 15 14:51:11 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 15 14:51:11 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 15 14:51:11 +02:00 dengstra  Setting up default gateway... OK
+Jun 15 14:51:11 +02:00 dengstra  Bringing up the lo interface... 
+Jun 15 14:51:11 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 15 14:51:11 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 15 14:53:49 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 15 14:53:50 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 15 14:53:50 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 15 14:53:50 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 15 14:53:51 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 15 14:53:51 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 15 14:53:51 +02:00 dengstra  Checking file systems... OK
+Jun 15 14:53:51 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 15 14:53:51 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 15 14:53:51 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 15 14:53:51 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 15 14:53:52 +02:00 dengstra  Starting system log daemon... OK
+Jun 15 14:53:52 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 15 14:53:52 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 15 14:53:52 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 15 14:53:52 +02:00 dengstra  Setting up default gateway... OK
+Jun 15 14:53:52 +02:00 dengstra  Bringing up the lo interface... 
+Jun 15 14:53:52 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 15 14:53:52 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 17 13:13:44 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 17 13:13:44 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 17 13:13:44 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 17 13:13:44 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 17 13:13:48 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 17 13:13:48 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 17 13:13:48 +02:00 dengstra  Checking file systems... OK
+Jun 17 13:13:49 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 17 13:13:49 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 17 13:13:49 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 17 13:13:49 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 17 13:13:50 +02:00 dengstra  Starting system log daemon... OK
+Jun 17 13:13:50 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 17 13:13:50 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 17 13:13:51 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 17 13:13:51 +02:00 dengstra  Setting up default gateway... OK
+Jun 17 13:13:51 +02:00 dengstra  Bringing up the lo interface... 
+Jun 17 13:13:51 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 17 13:13:51 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 17 13:33:21 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 17 13:33:21 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 17 13:33:21 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 17 13:33:21 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 17 13:33:23 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 17 13:33:23 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 17 13:33:23 +02:00 dengstra  Checking file systems... OK
+Jun 17 13:33:23 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 17 13:33:23 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 17 13:33:24 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 17 13:33:24 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 17 13:33:25 +02:00 dengstra  Starting system log daemon... OK
+Jun 17 13:33:25 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 17 13:33:25 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 17 13:33:25 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 17 13:33:25 +02:00 dengstra  Setting up default gateway... OK
+Jun 17 13:33:25 +02:00 dengstra  Bringing up the lo interface... 
+Jun 17 13:33:25 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 17 13:33:25 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 17 13:36:14 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 17 13:36:14 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 17 13:36:14 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 17 13:36:14 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 17 13:36:16 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 17 13:36:16 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 17 13:36:16 +02:00 dengstra  Checking file systems... OK
+Jun 17 13:36:16 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 17 13:36:16 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 17 13:36:17 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 17 13:36:17 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 17 13:36:18 +02:00 dengstra  Starting system log daemon... OK
+Jun 17 13:36:18 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 17 13:36:18 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 17 13:36:18 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 17 13:36:18 +02:00 dengstra  Setting up default gateway... OK
+Jun 17 13:36:18 +02:00 dengstra  Bringing up the lo interface... 
+Jun 17 13:36:18 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 17 13:36:18 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 17 13:40:21 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 17 13:40:21 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 17 13:40:21 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 17 13:40:21 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 17 13:40:23 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 17 13:40:23 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 17 13:40:23 +02:00 dengstra  Checking file systems... OK
+Jun 17 13:40:23 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 17 13:40:23 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 17 13:40:23 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 17 13:40:23 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 17 13:40:24 +02:00 dengstra  Starting system log daemon... OK
+Jun 17 13:40:24 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 17 13:40:24 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 17 13:40:24 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 17 13:40:24 +02:00 dengstra  Setting up default gateway... OK
+Jun 17 13:40:24 +02:00 dengstra  Bringing up the lo interface... 
+Jun 17 13:40:24 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 17 13:40:24 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 17 13:49:33 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 17 13:49:33 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 17 13:49:33 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 17 13:49:33 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 17 13:49:35 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 17 13:49:35 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 17 13:49:35 +02:00 dengstra  Checking file systems... OK
+Jun 17 13:49:35 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 17 13:49:35 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 17 13:49:35 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 17 13:49:35 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 17 13:49:36 +02:00 dengstra  Starting system log daemon... OK
+Jun 17 13:49:36 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 17 13:49:36 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 17 13:49:36 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 17 13:49:36 +02:00 dengstra  Setting up default gateway... OK
+Jun 17 13:49:36 +02:00 dengstra  Bringing up the lo interface... 
+Jun 17 13:49:36 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 17 13:49:36 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 18 12:16:10 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 18 12:16:10 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 18 12:16:10 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 18 12:16:10 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 18 12:16:13 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 18 12:16:13 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 18 12:16:13 +02:00 dengstra  Checking file systems... OK
+Jun 18 12:16:15 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 18 12:16:15 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 18 12:16:15 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 18 12:16:15 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 18 12:16:16 +02:00 dengstra  Starting system log daemon... OK
+Jun 18 12:16:16 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 18 12:16:16 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 18 12:16:16 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 18 12:16:16 +02:00 dengstra  Setting up default gateway... OK
+Jun 18 12:16:16 +02:00 dengstra  Bringing up the lo interface... 
+Jun 18 12:16:16 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 18 12:16:16 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 18 13:10:25 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 18 13:10:25 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 18 13:10:25 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 18 13:10:25 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 18 13:10:28 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 18 13:10:28 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 18 13:10:28 +02:00 dengstra  Checking file systems... OK
+Jun 18 13:10:29 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 18 13:10:29 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 18 13:10:29 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 18 13:10:29 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 18 13:10:30 +02:00 dengstra  Starting system log daemon... OK
+Jun 18 13:10:30 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 18 13:10:30 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 18 13:10:30 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 18 13:10:30 +02:00 dengstra  Setting up default gateway... OK
+Jun 18 13:10:30 +02:00 dengstra  Bringing up the lo interface... 
+Jun 18 13:10:30 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 18 13:10:30 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 20 10:39:42 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 20 10:39:42 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 20 10:39:42 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 20 10:39:42 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 20 10:39:45 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 20 10:39:45 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 20 10:39:45 +02:00 dengstra  Checking file systems... OK
+Jun 20 10:39:46 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 20 10:39:46 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 20 10:39:47 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 20 10:39:47 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 20 10:39:48 +02:00 dengstra  Starting system log daemon... OK
+Jun 20 10:39:48 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 20 10:39:48 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 20 10:39:48 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 20 10:39:48 +02:00 dengstra  Setting up default gateway... OK
+Jun 20 10:39:48 +02:00 dengstra  Bringing up the lo interface... 
+Jun 20 10:39:48 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 20 10:39:48 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 20 12:22:39 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 20 12:22:39 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 20 12:22:39 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 20 12:22:39 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 20 12:22:42 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 20 12:22:42 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 20 12:22:42 +02:00 dengstra  Checking file systems... OK
+Jun 20 12:22:44 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 20 12:22:44 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 20 12:22:44 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 20 12:22:44 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 20 12:22:45 +02:00 dengstra  Starting system log daemon... OK
+Jun 20 12:22:45 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 20 12:22:45 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 20 12:22:45 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 20 12:22:45 +02:00 dengstra  Setting up default gateway... OK
+Jun 20 12:22:45 +02:00 dengstra  Bringing up the lo interface... 
+Jun 20 12:22:45 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 20 12:22:45 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 20 12:25:38 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 20 12:25:38 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 20 12:25:38 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 20 12:25:38 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 20 12:25:39 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 20 12:25:39 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 20 12:25:39 +02:00 dengstra  Checking file systems... OK
+Jun 20 12:25:39 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 20 12:25:39 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 20 12:25:39 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 20 12:25:39 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 20 12:25:40 +02:00 dengstra  Starting system log daemon... OK
+Jun 20 12:25:40 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 20 12:25:40 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 20 12:25:40 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 20 12:25:40 +02:00 dengstra  Setting up default gateway... OK
+Jun 20 12:25:40 +02:00 dengstra  Bringing up the lo interface... 
+Jun 20 12:25:40 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 20 12:25:40 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 20 14:02:01 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 20 14:02:01 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 20 14:02:01 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 20 14:02:01 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 20 14:02:04 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 20 14:02:04 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 20 14:02:04 +02:00 dengstra  Checking file systems... OK
+Jun 20 14:02:06 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 20 14:02:06 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 20 14:02:06 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 20 14:02:06 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 20 14:02:08 +02:00 dengstra  Starting system log daemon... OK
+Jun 20 14:02:08 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 20 14:02:08 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 20 14:02:08 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 20 14:02:08 +02:00 dengstra  Setting up default gateway... OK
+Jun 20 14:02:08 +02:00 dengstra  Bringing up the lo interface... 
+Jun 20 14:02:08 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 20 14:02:08 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 20 15:47:50 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 20 15:47:50 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 20 15:47:50 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 20 15:47:50 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 20 15:47:53 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 20 15:47:53 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 20 15:47:53 +02:00 dengstra  Checking file systems... OK
+Jun 20 15:47:54 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 20 15:47:54 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 20 15:47:55 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 20 15:47:55 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 20 15:47:56 +02:00 dengstra  Starting system log daemon... OK
+Jun 20 15:47:56 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 20 15:47:56 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 20 15:47:56 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 20 15:47:56 +02:00 dengstra  Setting up default gateway... OK
+Jun 20 15:47:56 +02:00 dengstra  Bringing up the lo interface... 
+Jun 20 15:47:56 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 20 15:47:56 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 20 16:20:12 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 20 16:20:12 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 20 16:20:12 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 20 16:20:12 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 20 16:20:16 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 20 16:20:16 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 20 16:20:16 +02:00 dengstra  Checking file systems... OK
+Jun 20 16:20:17 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 20 16:20:17 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 20 16:20:17 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 20 16:20:17 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 20 16:20:19 +02:00 dengstra  Starting system log daemon... OK
+Jun 20 16:20:19 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 20 16:20:19 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 20 16:20:19 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 20 16:20:19 +02:00 dengstra  Setting up default gateway... OK
+Jun 20 16:20:19 +02:00 dengstra  Bringing up the lo interface... 
+Jun 20 16:20:19 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 20 16:20:19 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 20 16:42:02 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 20 16:42:02 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 20 16:42:02 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 20 16:42:02 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 20 16:42:04 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 20 16:42:04 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 20 16:42:04 +02:00 dengstra  Checking file systems... OK
+Jun 20 16:42:04 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 20 16:42:04 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 20 16:42:05 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 20 16:42:05 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 20 16:42:06 +02:00 dengstra  Starting system log daemon... OK
+Jun 20 16:42:06 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 20 16:42:06 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 20 16:42:06 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 20 16:42:06 +02:00 dengstra  Setting up default gateway... OK
+Jun 20 16:42:06 +02:00 dengstra  Bringing up the lo interface... 
+Jun 20 16:42:06 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 20 16:42:06 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 20 16:59:33 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 20 16:59:33 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 20 16:59:33 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 20 16:59:33 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 20 16:59:34 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 20 16:59:34 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 20 16:59:34 +02:00 dengstra  Checking file systems... OK
+Jun 20 16:59:34 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 20 16:59:34 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 20 16:59:34 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 20 16:59:34 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 20 16:59:35 +02:00 dengstra  Starting system log daemon... OK
+Jun 20 16:59:35 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 20 16:59:35 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 20 16:59:35 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 20 16:59:35 +02:00 dengstra  Setting up default gateway... OK
+Jun 20 16:59:35 +02:00 dengstra  Bringing up the lo interface... 
+Jun 20 16:59:35 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 20 16:59:35 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 20 19:34:55 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 20 19:34:55 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 20 19:34:55 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 20 19:34:55 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 20 19:34:58 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 20 19:34:58 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 20 19:34:58 +02:00 dengstra  Checking file systems... OK
+Jun 20 19:34:59 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 20 19:34:59 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 20 19:35:00 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 20 19:35:00 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 20 19:35:01 +02:00 dengstra  Starting system log daemon... OK
+Jun 20 19:35:01 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 20 19:35:01 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 20 19:35:01 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 20 19:35:01 +02:00 dengstra  Setting up default gateway... OK
+Jun 20 19:35:01 +02:00 dengstra  Bringing up the lo interface... 
+Jun 20 19:35:01 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 20 19:35:01 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 20 19:37:52 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 20 19:37:52 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 20 19:37:52 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 20 19:37:52 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 20 19:37:53 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 20 19:37:53 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 20 19:37:53 +02:00 dengstra  Checking file systems... OK
+Jun 20 19:37:53 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 20 19:37:53 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 20 19:37:53 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 20 19:37:53 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 20 19:37:54 +02:00 dengstra  Starting system log daemon... OK
+Jun 20 19:37:54 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 20 19:37:54 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 20 19:37:54 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 20 19:37:54 +02:00 dengstra  Setting up default gateway... OK
+Jun 20 19:37:54 +02:00 dengstra  Bringing up the lo interface... 
+Jun 20 19:37:54 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 20 19:37:54 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 20 20:56:40 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 20 20:56:41 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 20 20:56:41 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 20 20:56:41 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 20 20:56:45 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 20 20:56:45 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 20 20:56:45 +02:00 dengstra  Checking file systems... OK
+Jun 20 20:56:47 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 20 20:56:47 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 20 20:56:48 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 20 20:56:48 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 20 20:56:49 +02:00 dengstra  Starting system log daemon... OK
+Jun 20 20:56:49 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 20 20:56:49 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 20 20:56:49 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 20 20:56:49 +02:00 dengstra  Setting up default gateway... OK
+Jun 20 20:56:49 +02:00 dengstra  Bringing up the lo interface... 
+Jun 20 20:56:49 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 20 20:56:49 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 21 09:59:21 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 21 09:59:21 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 21 09:59:21 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 21 09:59:21 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 21 09:59:24 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 21 09:59:24 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 21 09:59:24 +02:00 dengstra  Checking file systems... OK
+Jun 21 09:59:24 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 21 09:59:24 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 21 09:59:25 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 21 09:59:25 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 21 09:59:26 +02:00 dengstra  Starting system log daemon... OK
+Jun 21 09:59:26 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 21 09:59:26 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 21 09:59:26 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 21 09:59:26 +02:00 dengstra  Setting up default gateway... OK
+Jun 21 09:59:26 +02:00 dengstra  Bringing up the lo interface... 
+Jun 21 09:59:26 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 21 09:59:27 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 21 12:30:06 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 21 12:30:06 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 21 12:30:06 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 21 12:30:06 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 21 12:30:08 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 21 12:30:08 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 21 12:30:08 +02:00 dengstra  Checking file systems... OK
+Jun 21 12:30:08 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 21 12:30:08 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 21 12:30:09 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 21 12:30:09 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 21 12:30:10 +02:00 dengstra  Starting system log daemon... OK
+Jun 21 12:30:10 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 21 12:30:10 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 21 12:30:10 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 21 12:30:10 +02:00 dengstra  Setting up default gateway... OK
+Jun 21 12:30:10 +02:00 dengstra  Bringing up the lo interface... 
+Jun 21 12:30:10 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 21 12:30:11 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 21 12:44:44 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 21 12:44:45 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 21 12:44:45 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 21 12:44:45 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 21 12:44:47 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 21 12:44:47 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 21 12:44:47 +02:00 dengstra  Checking file systems... OK
+Jun 21 12:44:47 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 21 12:44:47 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 21 12:44:48 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 21 12:44:48 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 21 12:44:49 +02:00 dengstra  Starting system log daemon... OK
+Jun 21 12:44:49 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 21 12:44:49 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 21 12:44:49 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 21 12:44:49 +02:00 dengstra  Setting up default gateway... OK
+Jun 21 12:44:49 +02:00 dengstra  Bringing up the lo interface... 
+Jun 21 12:44:49 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 21 12:44:49 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 21 13:10:56 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 21 13:10:56 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 21 13:10:56 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 21 13:10:56 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 21 13:10:57 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 21 13:10:57 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 21 13:10:57 +02:00 dengstra  Checking file systems... OK
+Jun 21 13:10:57 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 21 13:10:57 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 21 13:10:57 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 21 13:10:57 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 21 13:10:58 +02:00 dengstra  Starting system log daemon... OK
+Jun 21 13:10:58 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 21 13:10:58 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 21 13:10:58 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 21 13:10:58 +02:00 dengstra  Setting up default gateway... OK
+Jun 21 13:10:58 +02:00 dengstra  Bringing up the lo interface... 
+Jun 21 13:10:58 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 21 13:10:58 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 21 13:17:38 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 21 13:17:39 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 21 13:17:39 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 21 13:17:39 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 21 13:17:40 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 21 13:17:40 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 21 13:17:40 +02:00 dengstra  Checking file systems... OK
+Jun 21 13:17:40 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 21 13:17:40 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 21 13:17:40 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 21 13:17:40 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 21 13:17:41 +02:00 dengstra  Starting system log daemon... OK
+Jun 21 13:17:41 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 21 13:17:41 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 21 13:17:41 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 21 13:17:41 +02:00 dengstra  Setting up default gateway... OK
+Jun 21 13:17:41 +02:00 dengstra  Bringing up the lo interface... 
+Jun 21 13:17:41 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 21 13:17:41 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 21 13:34:23 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 21 13:34:23 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 21 13:34:23 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 21 13:34:23 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 21 13:34:26 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 21 13:34:26 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 21 13:34:26 +02:00 dengstra  Checking file systems... OK
+Jun 21 13:34:26 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 21 13:34:26 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 21 13:34:27 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 21 13:34:27 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 21 13:34:28 +02:00 dengstra  Starting system log daemon... OK
+Jun 21 13:34:28 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 21 13:34:28 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 21 13:34:28 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 21 13:34:28 +02:00 dengstra  Setting up default gateway... OK
+Jun 21 13:34:28 +02:00 dengstra  Bringing up the lo interface... 
+Jun 21 13:34:28 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 21 13:34:28 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 24 13:53:28 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 24 13:53:28 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 24 13:53:28 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 24 13:53:28 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 24 13:53:32 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 24 13:53:32 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 24 13:53:32 +02:00 dengstra  Checking file systems... OK
+Jun 24 13:53:35 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 24 13:53:35 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 24 13:53:36 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 24 13:53:36 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 24 13:53:37 +02:00 dengstra  Starting system log daemon... OK
+Jun 24 13:53:37 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 24 13:53:37 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 24 13:53:38 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 24 13:53:38 +02:00 dengstra  Setting up default gateway... OK
+Jun 24 13:53:38 +02:00 dengstra  Bringing up the lo interface... 
+Jun 24 13:53:38 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 24 13:53:38 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 25 12:48:55 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 25 12:48:55 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 25 12:48:55 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 25 12:48:55 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 25 12:48:58 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 25 12:48:58 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 25 12:48:58 +02:00 dengstra  Checking file systems... OK
+Jun 25 12:48:59 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 25 12:48:59 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 25 12:48:59 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 25 12:48:59 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 25 12:49:01 +02:00 dengstra  Starting system log daemon... OK
+Jun 25 12:49:01 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 25 12:49:01 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 25 12:49:02 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 25 12:49:02 +02:00 dengstra  Setting up default gateway... OK
+Jun 25 12:49:02 +02:00 dengstra  Bringing up the lo interface... 
+Jun 25 12:49:02 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 25 12:49:02 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 25 13:04:21 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 25 13:04:21 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 25 13:04:21 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 25 13:04:21 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 25 13:04:24 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 25 13:04:24 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 25 13:04:24 +02:00 dengstra  Checking file systems... OK
+Jun 25 13:04:24 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 25 13:04:24 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 25 13:04:24 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 25 13:04:25 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 25 13:04:26 +02:00 dengstra  Starting system log daemon... OK
+Jun 25 13:04:26 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 25 13:04:26 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 25 13:04:26 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 25 13:04:26 +02:00 dengstra  Setting up default gateway... OK
+Jun 25 13:04:26 +02:00 dengstra  Bringing up the lo interface... 
+Jun 25 13:04:26 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 25 13:04:26 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 27 13:10:27 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 27 13:10:27 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 27 13:10:27 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 27 13:10:27 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 27 13:10:30 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 27 13:10:30 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 27 13:10:30 +02:00 dengstra  Checking file systems... OK
+Jun 27 13:10:31 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 27 13:10:31 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 27 13:10:31 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 27 13:10:32 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 27 13:10:33 +02:00 dengstra  Starting system log daemon... OK
+Jun 27 13:10:33 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 27 13:10:33 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 27 13:10:33 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 27 13:10:33 +02:00 dengstra  Setting up default gateway... OK
+Jun 27 13:10:33 +02:00 dengstra  Bringing up the lo interface... 
+Jun 27 13:10:33 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 27 13:10:33 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 27 15:03:21 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 27 15:03:21 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 27 15:03:22 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 27 15:03:22 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 27 15:03:24 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 27 15:03:24 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 27 15:03:24 +02:00 dengstra  Checking file systems... OK
+Jun 27 15:03:25 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 27 15:03:25 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 27 15:03:26 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 27 15:03:26 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 27 15:03:27 +02:00 dengstra  Starting system log daemon... OK
+Jun 27 15:03:27 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 27 15:03:27 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 27 15:03:27 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 27 15:03:27 +02:00 dengstra  Setting up default gateway... OK
+Jun 27 15:03:27 +02:00 dengstra  Bringing up the lo interface... 
+Jun 27 15:03:28 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 27 15:03:28 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 27 16:03:11 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 27 16:03:11 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 27 16:03:11 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 27 16:03:11 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 27 16:03:14 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 27 16:03:14 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 27 16:03:14 +02:00 dengstra  Checking file systems... OK
+Jun 27 16:03:16 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 27 16:03:16 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 27 16:03:16 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 27 16:03:17 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 27 16:03:18 +02:00 dengstra  Starting system log daemon... OK
+Jun 27 16:03:18 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 27 16:03:18 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 27 16:03:18 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 27 16:03:18 +02:00 dengstra  Setting up default gateway... OK
+Jun 27 16:03:18 +02:00 dengstra  Bringing up the lo interface... 
+Jun 27 16:03:18 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 27 16:03:18 +02:00 dengstra  Starting SSH Server... OK
+--------
+Jun 27 16:12:51 +02:00 (none)  Mounting virtual file systems: /run /proc /sys OK
+Jun 27 16:12:51 +02:00 (none)  Bringing up the loopback interface...FAIL
+Jun 27 16:12:51 +02:00 (none)  Setting hostname to dengstra... OK
+Jun 27 16:12:51 +02:00 dengstra  Populating /dev with device nodes...  OK
+Jun 27 16:12:54 +02:00 dengstra  Activating all swap files/partitions... OK
+Jun 27 16:12:54 +02:00 dengstra  Mounting root file system in read-only mode...  OK
+Jun 27 16:12:54 +02:00 dengstra  Checking file systems... OK
+Jun 27 16:12:55 +02:00 dengstra  Remounting root file system in read-write mode... OK
+Jun 27 16:12:55 +02:00 dengstra  Mounting remaining file systems... OK
+Jun 27 16:12:55 +02:00 dengstra  Cleaning file systems: /tmp OK
+Jun 27 16:12:55 +02:00 dengstra  Retrying failed uevents, if any... OK
+Jun 27 16:12:56 +02:00 dengstra  Starting system log daemon... OK
+Jun 27 16:12:56 +02:00 dengstra  Starting kernel log daemon... OK
+Jun 27 16:12:56 +02:00 dengstra  Bringing up the enp0s3 interface... 
+Jun 27 16:12:56 +02:00 dengstra  Adding IPv4 address 10.0.2.15 to the enp0s3 interface... OK
+Jun 27 16:12:56 +02:00 dengstra  Setting up default gateway... OK
+Jun 27 16:12:56 +02:00 dengstra  Bringing up the lo interface... 
+Jun 27 16:12:56 +02:00 dengstra  Adding IPv4 address 127.0.0.1 to the lo interface... OK
+Jun 27 16:12:56 +02:00 dengstra  Starting SSH Server... OK
+--------
