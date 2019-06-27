@@ -20,9 +20,8 @@ static int ft_show(struct seq_file *s, void *v)
 {
 	struct mount *mnt = v;
 
-	pr_info("show");
-	if (!mnt)
-		return -1;
+	if (IS_ERR(mnt))
+		return PTR_ERR(mnt);
 	seq_printf(s, "%-20s", mnt->mnt_devname);
 	print_mnt_rec(s, mnt);
 	seq_puts(s, "\n");
@@ -34,9 +33,8 @@ static void *ft_next(struct seq_file *s, void *v, loff_t *pos)
 	struct mount *mnt = v;
 	struct mount *next;
 
-	pr_info("next");
-	if (!mnt)
-		return NULL;
+	if (IS_ERR(mnt))
+		return mnt;
 	next = list_next_entry(mnt, mnt_list);
 	if (next == real_mount(s->private))
 		goto end;
@@ -52,13 +50,12 @@ static void *ft_start(struct seq_file *s, loff_t *pos)
 	struct vfsmount *(*collect_mounts)(const struct path *p);
 	void (*drop_collected_mounts)(struct vfsmount *m);
 
-	pr_info("start");
 	if (*pos == 1337)
 		goto end;
 	collect_mounts = (void *)kallsyms_lookup_name("collect_mounts");
 	get_fs_root(current->fs, &root);
 	s->private = collect_mounts(&root);
-	if (!s->private)
+	if (IS_ERR(s->private))
 		return NULL;
 	return real_mount(s->private);
 end:
@@ -70,7 +67,6 @@ end:
 
 static void ft_stop(struct seq_file *s, void *v)
 {
-	pr_info("stop");
 }
 
 const struct seq_operations seq_ops = {
@@ -94,8 +90,8 @@ const struct file_operations ft_ops = {
 static int ft_init(void)
 {
 	pent = proc_create("mymounts", 0660, NULL, &ft_ops);
-	if (!pent)
-		return -1;
+	if (IS_ERR(pent))
+		return PTR_ERR(pent);
 	return 0;
 }
 
