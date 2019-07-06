@@ -11,6 +11,8 @@ int delay(int delays)
 
 	udelays = 10 * delays;
 	udelay(udelays);
+	if (delays)
+		pr_info("We slept a long time!");
 	return udelays;
 }
 
