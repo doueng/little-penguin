@@ -1,1 +1,4 @@
 udevadm monitor --property
+## qemu compatmonitor ##
+(qemu) device_add usb-kbd,id=rofl
+(qemu) device_del rofl
